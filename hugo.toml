@@ -1,5 +1,5 @@
 # General Settings
-title = "Bernd - Clean & Minimal Portfolio Hugo Theme"
+title = "Woojae Kang portfolio"
 baseURL = "woojae-kang.com" #YOUR SITE URL
 languageCode = "en-us"
 theme = "bernd"
