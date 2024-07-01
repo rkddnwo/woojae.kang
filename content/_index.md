@@ -1,5 +1,5 @@
 ---
-title: Bernd - Clean & Minimal Portfolio Hugo Theme
+title: Woojae Kang portfolio
 
 # Content section
 sections:
