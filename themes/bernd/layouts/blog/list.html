@@ -1,0 +1,203 @@
+{{ define "main" }}
+{{ $dateFormat := .Site.Params.dateFormat }}
+{{ $sidebar := .Site.Params.sidebar }}
+
+{{ "<!-- Blog Section -->" | safeHTML }}
+<section class="blog-section">
+    <div class="container">
+    <div class="row">
+
+      {{ if $sidebar.enable }}
+      
+        {{ if eq $sidebar.position "left" }}
+        <div class="col-md-3 bernd-padding-right">
+
+            {{ partial "sidebar" . }}
+
+        </div>  
+        {{ end }} 
+
+          <div class="col-md-9">
+      {{ else }} 
+          <div class="col-md-12">
+      {{ end }} 
+
+      {{ with .Params.blog }}
+
+      {{ $blogStyle := .blogStyle }}
+      {{ $sidebarBlog := .sidebar }}
+
+        <div id="blog-grid" data-columns="{{.columns}}" data-boxes-start="{{.boxesToLoadStart}}" data-boxes-load="{{.boxesToLoad}}" data-gap-horizontal="{{.gapHorizontal}}" data-gap-vertical="{{.gapVertical}}" data-load-more-word="{{ i18n "loadMoreWord" }}" data-loading-word="{{ i18n "LoadingWord" }}" data-no-more="{{ i18n "noMoreEntriesWord" }}">
+
+            <div class="media-boxes-grid-sizer"></div>
+
+        {{ range where $.Site.RegularPages "Section" "blog" }}
+        
+            <article class="post-item media-box">
+                {{ if eq $blogStyle "minimal" }}
+                <div class="minimal-box">
+                    <div class="col-md-5">
+                        <a href="{{ .Permalink }}">
+                            <div class="image-box" style="background-image: url('{{ .Params.image | absURL }}');"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                {{ end }} 
+                {{ if eq $blogStyle "creative" }}
+                <div class="creative-box">
+                        <a href="{{ .Permalink }}">
+                            <div class="image-box" style="background-image: url('{{ .Params.image | absURL }}');"></div>
+                        <div class="creative-inner-box">
+                            <div class="creative-item">
+                                <div class="item-info">
+                                    <span>{{ .Title }}</span>
+                                    <em>
+                                        <div class="date">{{ .PublishDate.Format $dateFormat }}</div>
+                                        {{ if .Params.author }}<div class="author"> {{ i18n "authorBy" }} {{ .Params.author }}</div>{{ end }}
+                                    </em>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                </div>
+                {{ end }} 
+                {{ if eq $blogStyle "classic" }}
+                        {{ if eq .Params.format "image" }}
+                        <div class="image-box">
+                            <a href="{{ .Permalink }}">
+                            <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" />
+                            </a>
+                        </div>
+                        {{ end }}
+                        {{ if eq .Params.format "quote" }}
+                        <div class="image-box type-quote" style="background-image: url('{{ .Params.image | absURL }}');">
+                        <blockquote>
+                            <p>{{ .Params.quote }}</p>
+                            <cite>{{ .Params.quoteAuthor }}</cite>  
+                        </blockquote>
+                        </div>
+                        {{ end }}
+                        {{ if eq .Params.format "link" }}
+                        <div class="image-box type-link" style="background-image: url('{{ .Params.image | absURL }}');">
+                            <a href="{{ .Params.link }}" target="_blank">{{ .Params.link }}</a>  
+                        </div>
+                        {{ end }}
+                        {{ if eq .Params.format "slider" }}
+                        <div class="flexslider">
+                        <ul class="slides">
+                            {{ range .Params.sliderImages }}
+                            <li>
+                                <div style="background-image:url('{{ .image | absURL }}')"></div>
+                                {{ if .caption }}
+                                <p class="flex-caption">{{ .caption }}</p>
+                                {{ end }}
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    {{ end }}
+                    {{ if eq .Params.format "gallery" }}
+                    <div class="gallery-box">
+                        <ul class="gallery-projects">
+                            {{ range .Params.galleryImages }}
+                                <li>
+                                <a href="{{ .image | absURL }}" data-fancybox="images">
+                                    <img src="{{ .image | absURL }}" alt="image">
+                                </a>
+                                </li> 
+                            {{ end }}
+                        </ul>
+                    </div>
+                    {{ end }}
+                    {{ if eq .Params.format "video" }}
+                    <div class="video-box {{ if eq .Params.typeVideo "vimeo" }} vimeo-video{{ end }}">
+                        {{ if eq .Params.typeVideo "html5" }}
+                        <video class="video-shortcode" preload="auto" controls>
+                            <source src="{{ .Params.video | absURL }}" type="video/mp4">
+                            There should have been a video here but your browser does not seem
+                            to support it.
+                        </video>
+                        {{ end }}
+                        {{ if eq .Params.typeVideo "vimeo" }}
+                        <iframe src="https://player.vimeo.com/video/{{ .Params.linkVideo }}?autoplay=0&color=ff0179&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        {{ end }}
+                        {{ if eq .Params.typeVideo "youtube" }}
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/{{ .Params.linkVideo }}?feature=oembed" frameborder="0" allowfullscreen=""></iframe>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                    {{ if eq .Params.format "audio" }}
+                    <div class="image-box type-audio" style="background-image: url('{{ .Params.image | absURL }}');">
+                        <h4>{{ .Params.captionAudio }}</h4>
+                        <audio controls>
+                        <source type="audio/mpeg" src="{{ .Params.audio | absURL }}">
+                        Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    {{ end }}
+                {{ end }}
+                {{ if or ( eq $blogStyle "classic" ) (eq $blogStyle "minimal" ) }}
+                    <h2 class="title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h2>
+                    {{ if eq $blogStyle "classic" }}
+                    <div class="post-details">
+                    {{ if .Params.author }}<div class="author"><div class="avatar-author" style="background-image: url('{{ .Params.authorAvatar | absURL }}');"></div>{{ .Params.author }}</div>{{ end }}
+                    <div class="date"><span> {{ .PublishDate.Format $dateFormat }}</span></div> 
+                    {{ if .Params.categories }}<div class="category"> {{ with (.GetTerms "categories") }}{{ range $i, $t := . }}{{ if $i }},&nbsp;{{ end }}<a href="{{ $t.Permalink }}">{{ $t.LinkTitle }}</a>{{ end }}{{ end }}</div>{{ end }}
+                    </div>
+                    {{ end }}
+                    {{ if eq $blogStyle "minimal" }}
+                    <div class="post-details">
+                    <div class="date"><span> {{ .PublishDate.Format $dateFormat }}</span></div>
+                    </div>
+                    {{ end }}
+                    <div class="text">
+                        {{ .Summary }} &#8230;
+                    </div>
+                    <div class="button">
+                        <a href="{{ .Permalink }}">{{ i18n "readMore" }}</a>
+                    </div>
+                {{ end }}
+
+                {{ if eq $blogStyle "minimal" }}
+
+                    </div>
+                </div>
+
+                {{ end }}
+                
+            </article>
+            {{ end }}
+        </div>
+
+        {{ if eq .loadMoreButton "show" }}
+        <div class="ajax-load-box text-center">
+            <div class="media-boxes-load-more media-boxes-load-more-button"></div>
+        </div>
+        {{ end }}
+        
+
+        </div>
+        {{ end }}
+
+        {{ if $sidebar.enable }}
+
+            {{ if eq $sidebar.position "right" }}
+            <div class="col-md-3 bernd-padding-left">
+
+            {{ partial "sidebar" . }}
+
+            </div>  
+            {{ end }}
+
+       {{ end }}
+  
+    </div>
+    </div>
+</section>
+
+
+
+
+{{ end }}

@@ -1,0 +1,8 @@
+{{ $result := newScratch }}
+{{ $result.Set "pages" slice }}
+{{ range where .Site.RegularPages "Type" "not in"  (slice "page" "json") }}
+{{ $cover := $result.Get "Null" }}
+{{ $cover := .Params.image | absURL }}
+{{ $result.Add "pages" (dict "url" .RelPermalink "content" .Plain "title" .Title "tags" .Params.Tags "excerpt" .Params.excerpt "cover" $cover) }}
+{{ end }}
+{{ $result.Get "pages" | jsonify }}

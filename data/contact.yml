@@ -1,0 +1,45 @@
+### Sections content configuration file
+### Here you can find all content in all pre-build sections
+
+### Contact [ contactSection ]
+contact:
+  enable: true
+  title: "Contact Info."
+ 
+  contactInformation:
+    - icon: "fas fa-phone-alt"
+      title: "+61383766284"
+
+    - icon: "fas fa-at"
+      title: "youremailaddress.com"
+
+    - icon: "fas fa-location-arrow"
+      title: "Melbourne, Australia"
+
+### Map [ mapSection ]
+map:
+  enable: true
+  title: "Our Office."
+  description: "Kinglake West VIC 3757. Melbourne, Australia<br>Call: +61383766284"
+  latitude: "-37.8602828"
+  longitude: "145.079616"
+  iconLocationImage: "/images/icon-location.png"
+  titleIconLocation: "Melbourne, Australia"
+  colorMap: "#2d313f"
+  saturationMap: -150
+  brightnessMap: 5
+  mapZoom: 10
+  informationBoxTitle: "CONTACT INFORMATION."
+  informationBox: 
+    - title: "Melbourne, Australia"
+      icon: "fas fa-location-arrow"
+    
+    - title: "765-302-2878"
+      icon: "fas fa-phone-alt"
+
+    - title: "name@domain.com"
+      icon: "fas fa-paper-plane"
+
+    - title: "mycompanyname.com"
+      icon: "fas fa-globe"
+      

@@ -1,0 +1,27 @@
+{{ with .Site.Data.about.contact }}
+{{ if .enable }}
+
+
+{{ "<!-- Skillbar Section -->" | safeHTML }}
+<section class="skillbar-section">
+
+    <div class="container">
+        <div class="row">
+			<div class="col-md-2">
+			</div>
+            <div class="col-md-8">
+                <h2>{{ .title | safeHTML }}</h2>
+				
+	            
+	           <h4>{{ .name | safeHTML }}<br><br>
+                       {{ .address | safeHTML }}<br></br>
+                        
+                       {{ .phone | safeHTML }}<br>
+	            <a href="mailto:{{ .email }}">{{ .email | safeHTML }}</a></h4>
+          </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
+{{ end }}

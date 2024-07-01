@@ -1,0 +1,27 @@
+{{ with .Site.Data.about.aboutUs }}
+{{ if .enable }}
+
+{{ "<!-- About Us Section -->" | safeHTML }}
+<section class="about-us-section">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                    <div class="about-description">
+                        <h2>{{ .title | safeHTML }}</h2>
+                        <h3>{{ .text1 | safeHTML }}</h3>
+                        <img class="profile-photo" src="{{ .profileImage | absURL }}">
+                        {{ .text2 | safeHTML }}
+                        <img class="signature-photo" src="{{ .signature | absURL }}"><br>
+                        <em>{{ .name }}</em><br>
+                        <em>{{ .date }}</em>
+                    </div>
+
+          </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
+{{ end }}

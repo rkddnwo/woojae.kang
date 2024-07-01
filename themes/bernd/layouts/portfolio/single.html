@@ -1,0 +1,996 @@
+{{ define "main" }}
+
+{{ $titlePage := .Params.title }}
+{{ $columns := .Params.gallery.columns }}
+{{ $columns1 := .Params.gallery1.columns }}
+{{ $columns2 := .Params.gallery2.columns }}
+{{ $columns3 := .Params.gallery3.columns }}
+{{ $columns4 := .Params.gallery4.columns }}
+{{ $columns5 := .Params.gallery5.columns }}
+{{ $columns6 := .Params.gallery6.columns }}
+{{ $columns7 := .Params.gallery7.columns }}
+{{ $columns8 := .Params.gallery8.columns }}
+{{ $columns9 := .Params.gallery9.columns }}
+{{ $columns10 := .Params.gallery10.columns }}
+{{ $urlPage := .Permalink }}
+{{ $details := .Params.details }}
+
+
+{{ with .Params.parallax }}
+{{ if .enable }}
+
+{{ "<!-- Parallax Section -->" | safeHTML }}
+<section class="parallax-section">
+    {{ if .image }}
+    <div class="parallax" {{ if and ( eq .parallaxVideo "show" ) (eq .parallaxLocalVideo "show" ) }} data-jarallax data-video-src="mp4:{{ .parallaxVideoLink }}" {{ end }} {{ if eq .parallaxVideo "show" }} data-jarallax data-video-src="{{ .parallaxVideoLink }}" {{ end }} style="background-image: url({{ .image | absURL }})">
+    {{ end }}
+    
+    <div class="cover-box">
+		{{ if $details.enable }}
+		<div class="title-cover">
+			<div class="box-project">
+				{{ if .title }}<h4>{{ .title }}</h4>{{ end }}
+			</div>
+			
+		</div>		
+
+		{{ end }}
+
+    </div>
+     
+    </div>
+	
+</section>
+
+{{ end }}
+{{ end }}
+
+<div id="project" class="container">
+	
+	<div class="row gy-5">
+
+{{ if eq .Params.style 1 }}	
+
+
+		{{ with .Params.content1 }}
+		{{ if .enable }}
+		<div class="col-md-12">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .video | safeHTML  }}
+			</section>
+
+		</div>
+		{{ end }}
+		<div class="col-md-2">
+		</div>
+
+		<div class="col-md-8">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h2>{{ .text | safeHTML  }}</h2>
+				<h4>{{ .des | safeHTML }}</h4>
+			</section>
+
+		</div>
+
+		
+		{{ end }}
+
+	<div class="col-md-12">
+
+		{{ with .Params.gallery1 }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div{{ if eq $columns1 1 }} class="col-md-12"{{ end }}  {{ if eq $columns1 2 }} class="col-md-6"{{ end }} {{ if eq $columns1 3 }} class="col-md-4"{{ end }}{{ if eq $columns1 4 }} class="col-md-3"{{ end }} >
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4) }}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+		{{ with .Params.content2 }}
+		{{ if .enable }}
+		<div class="col-md-2">
+		</div>
+
+		<div class="col-md-8">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h2>{{ .text | safeHTML  }}</h2>
+				<h4>{{ .des | safeHTML }}</h4>
+			</section>
+
+		</div>
+
+		{{ end }}
+		{{ end }}
+
+		
+
+		
+	<div class="col-md-12">
+
+		{{ with .Params.gallery2 }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4) }}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div {{ if eq $columns2 1 }} class="col-md-12"{{ end }} {{ if eq $columns2 2 }} class="col-md-6"{{ end }} {{ if eq $columns2 3 }} class="col-md-4"{{ end }}{{ if eq $columns2 4 }} class="col-md-3"{{ end }} >
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+		{{ with .Params.content3 }}
+		{{ if .enable }}
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h2>{{ .text | safeHTML  }}</h2>
+			</section>
+
+		</div>
+
+		{{ end }}
+		{{ end }}
+
+	
+
+		
+	<div class="col-md-12">
+
+		{{ with .Params.gallery3 }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div {{ if eq $columns3 1 }} class="col-md-12"{{ end }} {{ if eq $columns3 2 }} class="col-md-6"{{ end }} {{ if eq $columns3 3 }} class="col-md-4"{{ end }}{{ if eq $columns3 4 }} class="col-md-3"{{ end }} >
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+		{{ with .Params.content4 }}
+		{{ if .enable }}
+		
+		<div class="col-md-6">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h4>{{ .des1 | safeHTML  }}</h4>
+			</section>
+
+		</div>
+		
+		<div class="col-md-6">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h4>{{ .des2 | safeHTML  }}</h4>
+			</section>
+
+		</div>
+		{{ end }}
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h2>{{ .text | safeHTML  }}</h2>
+			</section>
+
+		</div>
+
+		
+		{{ end }}
+
+	
+
+		
+	<div class="col-md-12">
+
+		{{ with .Params.gallery4 }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div {{ if eq $columns4 1 }} class="col-md-12"{{ end }} {{ if eq $columns4 2 }} class="col-md-6"{{ end }} {{ if eq $columns4 3 }} class="col-md-4"{{ end }}{{ if eq $columns4 4 }} class="col-md-3"{{ end }} >
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+		{{ with .Params.content5 }}
+		{{ if .enable }}
+		
+		<div class="col-md-6">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h4>{{ .des1 | safeHTML  }}</h4>
+			</section>
+
+		</div>
+		
+		<div class="col-md-6">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h4>{{ .des2 | safeHTML  }}</h4>
+			</section>
+
+		</div>
+		{{ end }}
+		
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h2>{{ .text | safeHTML  }}</h2>
+			</section>
+
+		</div>
+		
+		
+
+		
+		{{ end }}
+
+	
+
+		
+	<div class="col-md-12">
+
+		{{ with .Params.gallery5 }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div {{ if eq $columns5 1 }} class="col-md-12"{{ end }} {{ if eq $columns5 2 }} class="col-md-6"{{ end }} {{ if eq $columns5 3 }} class="col-md-4"{{ end }}{{ if eq $columns5 4 }} class="col-md-3"{{ end }} >
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+		{{ with .Params.content6 }}
+		{{ if .enable }}
+		<div class="col-md-12">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .video | safeHTML  }}
+			</section>
+
+		</div>
+		{{ end}}
+		
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h2>{{ .text | safeHTML  }}</h2>
+			</section>
+
+		</div>
+		{{ end }}
+
+	
+
+		
+	<div class="col-md-12">
+
+		{{ with .Params.gallery6 }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div {{ if eq $columns6 1 }} class="col-md-12"{{ end }} {{ if eq $columns6 2 }} class="col-md-6"{{ end }} {{ if eq $columns6 3 }} class="col-md-4"{{ end }}{{ if eq $columns6 4 }} class="col-md-3"{{ end }} >
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+		{{ with .Params.content7 }}
+		{{ if .enable }}
+		<div class="col-md-6">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h4>{{ .des1 | safeHTML  }}</h4>
+			</section>
+
+		</div>
+		
+		<div class="col-md-6">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h4>{{ .des2 | safeHTML  }}</h4>
+			</section>
+
+		</div>
+		{{ end }}
+		
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h2>{{ .text | safeHTML  }}</h2>
+			</section>
+
+		</div>
+		{{ end }}
+
+	
+
+		
+	<div class="col-md-12">
+
+		{{ with .Params.gallery7 }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div {{ if eq $columns7 1 }} class="col-md-12"{{ end }} {{ if eq $columns7 2 }} class="col-md-6"{{ end }} {{ if eq $columns7 3 }} class="col-md-4"{{ end }}{{ if eq $columns7 4 }} class="col-md-3"{{ end }} >
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+
+				
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+		{{ with .Params.content8 }}
+		{{ if .enable }}
+		<div class="col-md-12">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .video | safeHTML  }}
+			</section>
+
+		</div>
+		{{ end }}
+		
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h2>{{ .text | safeHTML  }}</h2>
+			</section>
+
+		</div>
+
+		
+		{{ end }}
+
+	
+
+		
+	<div class="col-md-12">
+
+		{{ with .Params.gallery8 }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div {{ if eq $columns8 1 }} class="col-md-12"{{ end }} {{ if eq $columns8 2 }} class="col-md-6"{{ end }} {{ if eq $columns8 3 }} class="col-md-4"{{ end }}{{ if eq $columns8 4 }} class="col-md-3"{{ end }} >
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+		{{ with .Params.content9 }}
+		{{ if .enable }}
+		
+		<div class="col-md-12">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .video | safeHTML  }}
+			</section>
+
+		</div>
+		{{ end }}
+		
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h2>{{ .text | safeHTML  }}</h2>
+			</section>
+
+		</div>
+
+		
+		{{ end }}
+
+	
+
+		
+	<div class="col-md-12">
+
+		{{ with .Params.gallery9 }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div {{ if eq $columns9 1 }} class="col-md-12"{{ end }} {{ if eq $columns9 2 }} class="col-md-6"{{ end }} {{ if eq $columns9 3 }} class="col-md-4"{{ end }}{{ if eq $columns9 4 }} class="col-md-3"{{ end }} >
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+		{{ with .Params.content10 }}
+		{{ if .enable }}
+		<div class="col-md-12">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .video | safeHTML  }}
+			</section>
+
+		</div>
+		{{ end }}
+		
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h2>{{ .text | safeHTML  }}</h2>
+			</section>
+
+		</div>
+
+		
+		{{ end }}
+
+	
+
+		
+	<div class="col-md-12">
+
+		{{ with .Params.gallery10 }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div {{ if eq $columns10 2 }} class="col-md-6"{{ end }} {{ if eq $columns10 3 }} class="col-md-4"{{ end }}{{ if eq $columns10 4 }} class="col-md-3"{{ end }} >
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4)}}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+		{{ with .Params.content_end }}
+		{{ if .enable }}
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				<h3>{{ .title | safeHTML  }}</h3>
+				<h4>{{ .des | safeHTML }}</h4>
+			</section>
+
+		</div>
+
+		{{ end }}
+		{{ end }}
+
+
+{{ end }}
+
+{{ if eq .Params.style 2 }}
+
+	<div class="col-md-12">
+
+		{{ with .Params.gallery }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) }}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div {{ if eq $columns 2 }} class="col-md-6"{{ end }} {{ if eq $columns 3 }} class="col-md-4"{{ end }}>
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) }}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+		{{ with .Params.content }}
+		{{ if .enable }}
+
+		<div class="col-md-6">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .text | safeHTML  }}
+			</section>
+
+		</div>
+
+		{{ end }}
+		{{ end }}
+
+		{{ with .Params.content }}
+		{{ if .enable }}
+
+		<div class="col-md-6">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .signature | safeHTML  }}
+				{{ if .signatureImage }}<img src="{{ .signatureImage | absURL }}" alt="{{ $titlePage }}">{{ end }}
+				{{ .signatureName | safeHTML  }}
+				{{ .signatureName2 | safeHTML  }}
+			</section>
+
+		</div>
+
+		{{ end }}
+		{{ end }}
+
+{{ end }}
+
+
+{{ if eq .Params.style 3 }}
+
+		<div class="col-md-6">
+
+			{{ with .Params.gallery }}
+			{{ if .enable }}
+			<section class="project-gallery">
+				{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) }}
+				<div class="row gy-5">
+				{{ end }}
+				{{ range .items }}
+				<div {{ if eq $columns 2 }} class="col-md-6"{{ end }} {{ if eq $columns 3 }} class="col-md-4"{{ end }}>
+					<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+				</div>
+				{{ end }}
+				{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) }}
+				</div>
+				{{ end }}
+			</section>
+			{{ end }}
+			{{ end }}
+
+		</div>
+
+
+		{{ with .Params.content }}
+		{{ if .enable }}
+
+		<div class="col-md-6">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .text | safeHTML  }}
+			</section>
+
+		</div>
+
+		
+		<div class="col-md-12">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .signature | safeHTML  }}
+				{{ if .signatureImage }}<img src="{{ .signatureImage | absURL }}" alt="{{ $titlePage }}">{{ end }}
+				{{ .signatureName | safeHTML  }}
+				{{ .signatureName2 | safeHTML  }}
+			</section>
+	
+		</div>
+
+		{{ end }}
+		{{ end }}
+	
+{{ end }}
+
+{{ if eq .Params.style 4 }}
+
+		{{ with .Params.content }}
+		{{ if .enable }}
+
+		<div class="col-md-12">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .signature | safeHTML  }}
+				{{ if .signatureImage }}<img src="{{ .signatureImage | absURL }}" alt="{{ $titlePage }}">{{ end }}
+				{{ .signatureName | safeHTML  }}
+				{{ .signatureName2 | safeHTML  }}
+			</section>
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .text | safeHTML  }}
+			</section>
+
+		</div>
+
+		{{ end }}
+		{{ end }}
+
+		<div class="col-md-12">
+
+			{{ with .Params.gallery }}
+			{{ if .enable }}
+			<section class="project-gallery">
+				{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4) }}
+				<div class="row gy-5">
+				{{ end }}
+				{{ range .items }}
+				<div {{ if eq $columns 2 }} class="col-md-6"{{ end }} {{ if eq $columns 3 }} class="col-md-4"{{ end }} {{ if eq $columns 4 }} class="col-md-3"{{ end }}>
+					<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+				</div>
+				{{ end }}
+				{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) (eq .columns 4) }}
+				</div>
+				{{ end }}
+			</section>
+			{{ end }}
+			{{ end }}
+
+		</div>
+
+{{ end }}
+
+{{ if eq .Params.style 5 }}
+
+		<div class="col-md-12">
+
+			{{ with .Params.gallery }}
+			{{ if .enable }}
+			<section class="project-gallery">
+				{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) }}
+				<div class="row gy-5">
+				{{ end }}
+				{{ range .items }}
+				<div {{ if eq $columns 2 }} class="col-md-6"{{ end }} {{ if eq $columns 3 }} class="col-md-4"{{ end }}>
+					<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+				</div>
+				{{ end }}
+				{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) }}
+				</div>
+				{{ end }}
+			</section>
+			{{ end }}
+			{{ end }}
+
+		</div>
+
+		{{ with .Params.content }}
+		{{ if .enable }}
+
+		<div class="col-md-12">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .signature | safeHTML  }}
+				{{ if .signatureImage }}<img src="{{ .signatureImage | absURL }}" alt="{{ $titlePage }}">{{ end }}
+				{{ .signatureName | safeHTML  }}
+				{{ .signatureName2 | safeHTML  }}
+			</section>
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .text | safeHTML  }}
+			</section>
+
+		</div>
+
+		{{ end }}
+		{{ end }}
+
+{{ end }}
+
+
+{{ if eq .Params.style 6 }}
+
+	<div class="col-md-12">
+
+		{{ with .Params.gallery }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) }}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div {{ if eq $columns 2 }} class="col-md-6"{{ end }} {{ if eq $columns 3 }} class="col-md-4"{{ end }}>
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) }}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+		{{ with .Params.content }}
+		{{ if .enable }}
+
+		<div class="col-md-6">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .text | safeHTML  }}
+			</section>
+
+		</div>
+
+		{{ end }}
+		{{ end }}
+
+		{{ with .Params.content }}
+		{{ if .enable }}
+
+		<div class="col-md-6">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .signature | safeHTML  }}
+				{{ if .signatureImage }}<img src="{{ .signatureImage | absURL }}" alt="{{ $titlePage }}">{{ end }}
+				{{ .signatureName | safeHTML  }}
+				{{ .signatureName2 | safeHTML  }}
+			</section>
+
+		</div>
+
+		{{ end }}
+		{{ end }}
+
+		
+	<div class="col-md-12">
+
+		{{ with .Params.gallery2 }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) }}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div {{ if eq $columns2 2 }} class="col-md-6"{{ end }} {{ if eq $columns2 3 }} class="col-md-4"{{ end }}>
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) }}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+{{ end }}
+
+{{ if eq .Params.style 7 }}
+
+	<div class="col-md-12">
+
+		{{ with .Params.gallery }}
+		{{ if .enable }}
+		<section class="project-gallery">
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) }}
+			<div class="row gy-5">
+			{{ end }}
+			{{ range .items }}
+			<div {{ if eq $columns 2 }} class="col-md-6"{{ end }} {{ if eq $columns 3 }} class="col-md-4"{{ end }}>
+				<img src="{{ .image | absURL }}" alt="{{ $titlePage }}">
+			</div>
+			{{ end }}
+			{{ if or (eq .columns 1) (eq .columns 2) (eq .columns 3) }}
+			</div>
+			{{ end }}
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+		{{ with .Params.content }}
+		{{ if .enable }}
+
+		<div class="col-md-12">
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .signature | safeHTML  }}
+				{{ if .signatureImage }}<img src="{{ .signatureImage | absURL }}" alt="{{ $titlePage }}">{{ end }}
+				{{ .signatureName | safeHTML  }}
+				{{ .signatureName2 | safeHTML  }}
+			</section>
+
+			{{ "<!-- Description -->" | safeHTML }}
+			<section class="description-details">
+				{{ .text | safeHTML  }}
+			</section>
+
+		</div>
+
+		{{ end }}
+		{{ end }}
+
+		
+	<div class="col-md-12">
+
+		{{ with .Params.sliderImages }}
+		{{ if .enable }}
+		<section class="project-slider">
+			<div class="flexslider">
+				<ul class="slides">
+					{{ range .items }}
+					<li>
+						<div style="background-image:url('{{ .image | absURL }}')"></div>
+						{{ if .caption }}
+						<p class="flex-caption">{{ .caption }}</p>
+						{{ end }}
+					</li>
+					{{ end }}
+				</ul>
+			</div>
+		</section>
+		{{ end }}
+		{{ end }}
+
+	</div>
+
+{{ end }}
+
+
+{{ if or .NextInSection .PrevInSection }}
+
+{{ "<!-- Navigation -->" | safeHTML }}
+<div class="project-navigation">
+	{{ if .PrevInSection }}
+	{{ $imageProject := .PrevInSection.Params.image }}
+	<div class="next-project">
+		<a href="{{ .PrevInSection.Permalink }}">
+			<div class="nav-img-box">
+				<div class="nav-img" style="background-image:url({{ $imageProject | absURL }});"></div>
+				<span>{{ i18n "nextProject" }}<i class="fa-solid fa-arrow-right-long"></i></span>
+			</div>
+		</a>
+	</div>
+	{{ end }}
+	{{ if .NextInSection }}
+	{{ $imageProject := .NextInSection.Params.image }}
+	<div class="prev-project">
+		<a href="{{ .NextInSection.Permalink }}">
+			<div class="nav-img-box">
+				<div class="nav-img" style="background-image:url({{ $imageProject | absURL }});"></div>
+				<span><i class="fa-solid fa-arrow-left-long"></i>{{ i18n "prevProject" }}</span>
+			</div>
+		</a>
+	</div>
+	{{ end }}
+</div>
+
+{{ end }}
+
+</div>
+</div>
+{{ end }}
