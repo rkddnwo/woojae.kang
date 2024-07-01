@@ -34,7 +34,7 @@ DefaultContentLanguage = "en" # Site language. Available translations in the the
 [params]
 defaultLogo = "Woojae Kang"
 defaultKeywords = ["clean", "minimal", "blog", "responsive", "google analytics", "bootstrap", "portfolio", "personal", "modern", "parallax", "hugo theme", "creative"]
-defaultDescription = "Bernd - Clean & Minimal Portfolio Hugo Theme"
+defaultDescription = "Woojae Kang portfolio"
 dateFormat = "January 2, 2006"
 authorName = "Mountain-Themes"
 disqusComments = "" #YOUR DISQUS COMMENTS SHORTNAME
