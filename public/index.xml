@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Woojae Kang portfolio</title>
-    <link>woojae-kang.com/</link>
+    <link>$CF_PAGES_URL/</link>
     <description>Recent content on Woojae Kang portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Jun 2024 20:18:01 +0300</lastBuildDate>
-    <atom:link href="woojae-kang.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="$CF_PAGES_URL/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AQUANTENNA</title>
-      <link>woojae-kang.com/portfolio/aquantenna/</link>
+      <link>$CF_PAGES_URL/portfolio/aquantenna/</link>
       <pubDate>Mon, 03 Jun 2024 20:18:01 +0300</pubDate>
-      <guid>woojae-kang.com/portfolio/aquantenna/</guid>
+      <guid>$CF_PAGES_URL/portfolio/aquantenna/</guid>
       <description></description>
     </item>
     <item>
       <title>SINGLE PATH 3D PRINT</title>
-      <link>woojae-kang.com/portfolio/3dprint/</link>
+      <link>$CF_PAGES_URL/portfolio/3dprint/</link>
       <pubDate>Wed, 03 Apr 2024 20:18:01 +0300</pubDate>
-      <guid>woojae-kang.com/portfolio/3dprint/</guid>
+      <guid>$CF_PAGES_URL/portfolio/3dprint/</guid>
       <description></description>
     </item>
     <item>
       <title>BUTTON GAME</title>
-      <link>woojae-kang.com/portfolio/button/</link>
+      <link>$CF_PAGES_URL/portfolio/button/</link>
       <pubDate>Thu, 03 Aug 2023 20:18:01 +0300</pubDate>
-      <guid>woojae-kang.com/portfolio/button/</guid>
+      <guid>$CF_PAGES_URL/portfolio/button/</guid>
       <description></description>
     </item>
     <item>
       <title>RE-ADAPT</title>
-      <link>woojae-kang.com/portfolio/readapt/</link>
+      <link>$CF_PAGES_URL/portfolio/readapt/</link>
       <pubDate>Mon, 03 Jan 2022 20:18:01 +0300</pubDate>
-      <guid>woojae-kang.com/portfolio/readapt/</guid>
+      <guid>$CF_PAGES_URL/portfolio/readapt/</guid>
       <description></description>
     </item>
     <item>
       <title>ROLLE</title>
-      <link>woojae-kang.com/portfolio/rolle/</link>
+      <link>$CF_PAGES_URL/portfolio/rolle/</link>
       <pubDate>Fri, 03 May 2019 20:18:01 +0300</pubDate>
-      <guid>woojae-kang.com/portfolio/rolle/</guid>
+      <guid>$CF_PAGES_URL/portfolio/rolle/</guid>
       <description></description>
     </item>
     <item>
       <title>POPUPLAB</title>
-      <link>woojae-kang.com/portfolio/fablab/</link>
+      <link>$CF_PAGES_URL/portfolio/fablab/</link>
       <pubDate>Wed, 03 Oct 2018 20:18:01 +0300</pubDate>
-      <guid>woojae-kang.com/portfolio/fablab/</guid>
+      <guid>$CF_PAGES_URL/portfolio/fablab/</guid>
       <description></description>
     </item>
     <item>
       <title>S-DUMBBELL</title>
-      <link>woojae-kang.com/portfolio/dumbbell/</link>
+      <link>$CF_PAGES_URL/portfolio/dumbbell/</link>
       <pubDate>Sat, 03 Mar 2018 20:18:01 +0300</pubDate>
-      <guid>woojae-kang.com/portfolio/dumbbell/</guid>
+      <guid>$CF_PAGES_URL/portfolio/dumbbell/</guid>
       <description></description>
     </item>
     <item>
       <title>SWIMMING OCTOPUS</title>
-      <link>woojae-kang.com/portfolio/octopus/</link>
+      <link>$CF_PAGES_URL/portfolio/octopus/</link>
       <pubDate>Tue, 03 Oct 2017 20:18:01 +0300</pubDate>
-      <guid>woojae-kang.com/portfolio/octopus/</guid>
+      <guid>$CF_PAGES_URL/portfolio/octopus/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>woojae-kang.com/parallax-home/</link>
+      <link>$CF_PAGES_URL/parallax-home/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>woojae-kang.com/parallax-home/</guid>
+      <guid>$CF_PAGES_URL/parallax-home/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>woojae-kang.com/slider-home/</link>
+      <link>$CF_PAGES_URL/slider-home/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>woojae-kang.com/slider-home/</guid>
+      <guid>$CF_PAGES_URL/slider-home/</guid>
       <description></description>
     </item>
     <item>
       <title>Bernd - Home - About</title>
-      <link>woojae-kang.com/_about/</link>
+      <link>$CF_PAGES_URL/_about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>woojae-kang.com/_about/</guid>
+      <guid>$CF_PAGES_URL/_about/</guid>
       <description></description>
     </item>
     <item>
       <title>Bernd - Home - Contact</title>
-      <link>woojae-kang.com/_contact/</link>
+      <link>$CF_PAGES_URL/_contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>woojae-kang.com/_contact/</guid>
+      <guid>$CF_PAGES_URL/_contact/</guid>
       <description></description>
     </item>
     <item>
       <title>Bernd - Portfolio</title>
-      <link>woojae-kang.com/_portfolio/</link>
+      <link>$CF_PAGES_URL/_portfolio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>woojae-kang.com/_portfolio/</guid>
+      <guid>$CF_PAGES_URL/_portfolio/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,81 +2,81 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>woojae-kang.com/portfolio/aquantenna/</loc>
+    <loc>$CF_PAGES_URL/portfolio/aquantenna/</loc>
     <lastmod>2024-06-03T20:18:01+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/portfolio/</loc>
+    <loc>$CF_PAGES_URL/portfolio/</loc>
     <lastmod>2024-06-03T20:18:01+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/</loc>
+    <loc>$CF_PAGES_URL/</loc>
     <lastmod>2024-06-03T20:18:01+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/portfolio/3dprint/</loc>
+    <loc>$CF_PAGES_URL/portfolio/3dprint/</loc>
     <lastmod>2024-04-03T20:18:01+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/portfolio/button/</loc>
+    <loc>$CF_PAGES_URL/portfolio/button/</loc>
     <lastmod>2023-08-03T20:18:01+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/portfolio/readapt/</loc>
+    <loc>$CF_PAGES_URL/portfolio/readapt/</loc>
     <lastmod>2022-01-03T20:18:01+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/portfolio/rolle/</loc>
+    <loc>$CF_PAGES_URL/portfolio/rolle/</loc>
     <lastmod>2019-05-03T20:18:01+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/portfolio/fablab/</loc>
+    <loc>$CF_PAGES_URL/portfolio/fablab/</loc>
     <lastmod>2018-10-03T20:18:01+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/portfolio/dumbbell/</loc>
+    <loc>$CF_PAGES_URL/portfolio/dumbbell/</loc>
     <lastmod>2018-03-03T20:18:01+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/portfolio/octopus/</loc>
+    <loc>$CF_PAGES_URL/portfolio/octopus/</loc>
     <lastmod>2017-10-03T20:18:01+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/parallax-home/</loc>
+    <loc>$CF_PAGES_URL/parallax-home/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/slider-home/</loc>
+    <loc>$CF_PAGES_URL/slider-home/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/_about/</loc>
+    <loc>$CF_PAGES_URL/_about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/_contact/</loc>
+    <loc>$CF_PAGES_URL/_contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/_portfolio/</loc>
+    <loc>$CF_PAGES_URL/_portfolio/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/categories/</loc>
+    <loc>$CF_PAGES_URL/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>woojae-kang.com/tags/</loc>
+    <loc>$CF_PAGES_URL/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
