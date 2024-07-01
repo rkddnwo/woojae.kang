@@ -1,6 +1,6 @@
 # General Settings
 title = "Woojae Kang portfolio"
-baseURL = "woojae-kang.com" #YOUR SITE URL
+baseURL = "woojae-kang.pages.dev" #YOUR SITE URL
 languageCode = "en-us"
 theme = "bernd"
 resourceDir = "resources"
