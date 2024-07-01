@@ -90,7 +90,7 @@ preloader = 1 #PRELOADER SITE: [ 1 - yes, 0 - no ]
 
 # Footer Settings
 [params.footer]
-copyright = "<h4>Bernd</h4> © 2023. Design & Coded by <a href='http://themeforest.net/user/Mountain-Themes' target='_blank'> Mountain-Themes.</a>"
+copyright = ""
 
 # Social Settings
 [[params.social]]
