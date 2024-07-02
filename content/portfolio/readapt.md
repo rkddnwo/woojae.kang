@@ -26,9 +26,9 @@ style: 1 # 1 to 7
 
 # project description up to 10 description
 content1:
-  enable: false
+  enable: true
   text: "After COVID-19, the importance of ventilation and air cleanliness become a crucial factor in the indoor such as autonomous vehicles."
-  video: ""	
+  video: "<iframe src='https://youtube.com/embed/SwLmUQSM60w' width='1280' height='800' allowfullscreen='allowfullscreen'></iframe>"
 
 # gallery project
 gallery1:

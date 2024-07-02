@@ -27,6 +27,7 @@ style: 1 # 1 to 7
 # project description up to 10 description
 content1:
   enable: true
+  video: "<iframe src='https://youtube.com/embed/2nYzlasPjbU' width='1280' height='800' allowfullscreen='allowfullscreen'></iframe>"
   text: "SMART DUMBBELL is a speed detector 
 that helps user’s exercise tempo. Using vision interaction to indicate current speed of movement.<br><br><br><br>
 As stated in Behm, D., and Sale, D.G.’s Velocity Specificity of Resistance Training**, Resistance training at a specific speed will exhibit optimal gains at a similar 
