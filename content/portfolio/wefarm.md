@@ -101,23 +101,23 @@ gallery6:
   enable: true
   columns: 2
   items:
-  - image: "images/portfolio/wefarm/scenario1.jpg"
-  - image: "images/portfolio/wefarm/scenario2.jpg"
+  - image: "/images/portfolio/wefarm/scenario1.jpg"
+  - image: "/images/portfolio/wefarm/scenario2.jpg"
 
 # gallery projects
 gallery7:
   enable: true
   columns: 1
   items:
-  - image: "images/portfolio/wefarm/detail4.jpg"
+  - image: "/images/portfolio/wefarm/detail4.jpg"
 
 # gallery projects
 gallery8:
   enable: true
   columns: 2
   items:
-  - image: "images/portfolio/wefarm/detail1.jpg"
-  - image: "images/portfolio/wefarm/detail3.jpg"
+  - image: "/images/portfolio/wefarm/detail1.jpg"
+  - image: "/images/portfolio/wefarm/detail3.jpg"
 
 # project description
 content9:
@@ -130,17 +130,17 @@ gallery9:
   enable: true
   columns: 2 # 1 to 4
   items:
-  - image: "/images/portfolio/wefarm/makingof1.jpg"
-  - image: "/images/portfolio/wefarm/makingof2.jpg"
-  - image: "/images/portfolio/wefarm/detail2.jpg"
-  - image: "/images/portfolio/wefarm/makingof4.jpg"
-  - image: "/images/portfolio/wefarm/makingof5.jpg"
-  - image: "/images/portfolio/wefarm/makingof6.jpg"
-  - image: "/images/portfolio/wefarm/makingof7.jpg"
-  - image: "/images/portfolio/wefarm/makingof8.jpg"
-  - image: "/images/portfolio/wefarm/makingof9.jpg"
-  - image: "/images/portfolio/wefarm/makingof11.jpg"
-  - image: "/images/portfolio/wefarm/makingof10.jpg"
+  - image: "images/portfolio/wefarm/makingof1.jpg"
+  - image: "images/portfolio/wefarm/makingof2.jpg"
+  - image: "images/portfolio/wefarm/detail2.jpg"
+  - image: "images/portfolio/wefarm/makingof4.jpg"
+  - image: "images/portfolio/wefarm/makingof5.jpg"
+  - image: "images/portfolio/wefarm/makingof6.jpg"
+  - image: "images/portfolio/wefarm/makingof7.jpg"
+  - image: "images/portfolio/wefarm/makingof8.jpg"
+  - image: "images/portfolio/wefarm/makingof9.jpg"
+  - image: "images/portfolio/wefarm/makingof11.jpg"
+  - image: "images/portfolio/wefarm/makingof10.jpg"
    
 
 # project description
