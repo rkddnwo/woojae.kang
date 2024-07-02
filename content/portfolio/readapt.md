@@ -15,7 +15,7 @@ excerpt: "Created, likeness bring which in stars herb a is give you’ll it life
 # parallax
 parallax:
   enable: true
-  image: "/images/portfolio/readapt/heroshot.png"
+  image: "/images/portfolio/readapt/heroshot-small.jpg"
   title: "RE-ADAPT"
   effectTitle: "none" # Full list effects you can find in documentation theme
   parallaxVideo: "hide" # If "parallaxVideo" is "show"

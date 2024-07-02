@@ -15,7 +15,7 @@ excerpt: "Created, likeness bring which in stars herb a is give you’ll it life
 # parallax
 parallax:
   enable: true
-  image: "images/portfolio/3dprint/heroshot2.jpg"
+  image: "images/portfolio/3dprint/heroshot-small.jpg"
   title: "SINGLE PATH 3D PRINT"
   effectTitle: "none" # Full list effects you can find in documentation theme
   parallaxVideo: "hide" # If "parallaxVideo" is "show"

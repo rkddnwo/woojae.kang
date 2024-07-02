@@ -15,7 +15,7 @@ excerpt: "Created, likeness bring which in stars herb a is give you’ll it life
 # parallax
 parallax:
   enable: true
-  image: "/images/portfolio/octopus/heroshot.png"
+  image: "/images/portfolio/octopus/heroshot-small.jpg"
   title: "SWIMMING OCTOPUS"
   effectTitle: "none" # Full list effects you can find in documentation theme
   parallaxVideo: "hide" # If "parallaxVideo" is "show"
