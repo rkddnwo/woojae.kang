@@ -4,7 +4,7 @@ title: S-DUMBBELL
 date: 2018-03-03T20:18:01+03:00
 category: Product, Interaction
 category_slug: product, interaction
-image: images/portfolio/dumbbell/heroshot.png
+image: images/portfolio/dumbbell/heroshot-small.jpg
 columns: 1 # If you want a media box to be 1, 2 or 3 columns wide
 
 # excerpt for alternative portfolio style
@@ -38,7 +38,7 @@ gallery1:
   enable: true
   columns: 1 # 1 to 4
   items:
-  - image: "/images/portfolio/dumbbell/muscle.jpg"
+  - image: "/images/portfolio/dumbbell/background-small.jpg"
 
 
 # project description
@@ -53,9 +53,9 @@ gallery2:
   enable: true
   columns: 3 # 1 to 4
   items:
-  - image: "images/portfolio/dumbbell/speed1.png"
-  - image: "images/portfolio/dumbbell/speed2.png"
-  - image: "images/portfolio/dumbbell/speed3.png"
+  - image: "images/portfolio/dumbbell/speed1-small.jpg"
+  - image: "images/portfolio/dumbbell/speed2-small.jpg"
+  - image: "images/portfolio/dumbbell/speed3-small.jpg"
   
 # project description
 content3:
@@ -107,7 +107,7 @@ find way to smoothing raw data.<br><br>
 To catch noise from raw data and make bound of graph, I 
 used two different smoothing. This algorithm will apply to 
 raw data on dumbbell to prevent noise error."
-  video: "<iframe src='/video/dumbbell1.mp4' width='1280' height='800' allowfullscreen='allowfullscreen'></iframe>"
+  video: "<iframe src='https://youtube.com/embed/2nYzlasPjbU' width='1280' height='800' allowfullscreen='allowfullscreen'></iframe>"
 
 
 
@@ -126,7 +126,7 @@ gallery7:
   columns: 1 # 1 to 4
   items:
   - image: "/images/portfolio/dumbbell/makingof2.jpg"
-  - image: "/images/portfolio/dumbbell/heroshot2.png"
+  - image: "/images/portfolio/dumbbell/heroshot2-small.jpg"
 
 
 # project description

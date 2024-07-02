@@ -4,7 +4,7 @@ title: SINGLE PATH 3D PRINT
 date: 2024-04-03T20:18:01+03:00
 category: Product, Technology
 category_slug: product, tech
-image: images/portfolio/3dprint/heroshot2.jpg
+image: images/portfolio/3dprint/heroshot-small.jpg
 columns: 1 # If you want a media box to be 1, 2 or 3 columns wide
 
 # excerpt for alternative portfolio style

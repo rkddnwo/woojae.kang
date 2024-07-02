@@ -4,7 +4,7 @@ title: ROLLE
 date: 2019-05-03T20:18:01+03:00
 category: Product
 category_slug: product
-image: images/portfolio/rolle/heroshot.png
+image: images/portfolio/rolle/heroshot-small.jpg
 columns: 1 # If you want a media box to be 1, 2 or 3 columns wide
 
 # excerpt for alternative portfolio style
@@ -28,16 +28,16 @@ style: 1 # 1 to 7
 content1:
   enable: true
   text: "ROLLE is height changable leg inspired from string tension. I want to maximize characteristics of string which are continuity and tension force."
-  video: "<iframe src='/video/rolle.mp4' width='1040' height='800' allowfullscreen='allowfullscreen'></iframe>"	
+  video: "<iframe src='https://youtube.com/embed/LweAz8qWdWI' width='1040' height='800' allowfullscreen='allowfullscreen'></iframe>"	
 
 # gallery project
 gallery1:
   enable: true
   columns: 2 # 1 to 4
   items:
-    - image: "/images/portfolio/rolle/detail6.png"
+    - image: "/images/portfolio/rolle/detail6-small.jpg"
     - image: "/images/portfolio/rolle/detail4.jpg"
-    - image: "/images/portfolio/rolle/detail5.png"
+    - image: "/images/portfolio/rolle/detail5-small.jpg"
     - image: "/images/portfolio/rolle/detail3.jpg"
  
 
@@ -95,7 +95,7 @@ gallery6:
   enable: true
   columns: 1
   items:
-  - image: "images/portfolio/rolle/assemble.png"
+  - image: "images/portfolio/rolle/assemble-small.jpg"
 
 
 # project description
@@ -109,8 +109,8 @@ gallery7:
   enable: true
   columns: 2 # 1 to 4
   items:
-    - image: "/images/portfolio/rolle/makingof1.png"
-    - image: "/images/portfolio/rolle/makingof2.jpg"
+    - image: "/images/portfolio/rolle/makingof1-small.jpg"
+    - image: "/images/portfolio/rolle/makingof2-small.jpg"
    
 
 
@@ -119,7 +119,7 @@ gallery8:
   enable: true
   columns: 1 # 1 to 4
   items:
-    - image: "/images/portfolio/rolle/makingof4.jpg"
+    - image: "/images/portfolio/rolle/makingof4-small.jpg"
 
 # project description
 content_end:

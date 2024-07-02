@@ -4,7 +4,7 @@ title: RE-ADAPT
 date: 2022-01-03T20:18:01+03:00
 category: Product, Technology
 category_slug: product, tech
-image: images/portfolio/readapt/heroshot.png
+image: images/portfolio/readapt/heroshot-small.jpg
 columns: 1 # If you want a media box to be 1, 2 or 3 columns wide
 
 # excerpt for alternative portfolio style
@@ -35,7 +35,7 @@ gallery1:
   enable: true
   columns: 1 # 1 to 4
   items:
-    - image: "/images/portfolio/readapt/background.png"
+    - image: "/images/portfolio/readapt/background-small.jpg"
  
 
 # project description
@@ -48,7 +48,7 @@ gallery2:
   enable: true
   columns: 1 # 1 to 4
   items:
-    - image: "/images/portfolio/readapt/front.png"
+    - image: "/images/portfolio/readapt/front-small.jpg"
   
 # project description
 content3:
@@ -75,7 +75,7 @@ gallery4:
   enable: true
   columns: 1 # 1 to 4
   items:
-    - image: "/images/portfolio/readapt/blowseat.png"
+    - image: "/images/portfolio/readapt/blowseat-small.jpg"
 
 
 # project description
@@ -89,8 +89,8 @@ gallery5:
   enable: true
   columns: 2 # 1 to 4
   items:
-  - image: "/images/portfolio/readapt/detail1.png"
-  - image: "/images/portfolio/readapt/detail2.png"
+  - image: "/images/portfolio/readapt/detail1-small.jpg"
+  - image: "/images/portfolio/readapt/detail2-small.jpg"
 
 # project description
 content6:
@@ -102,7 +102,7 @@ gallery6:
   enable: true
   columns: 1 # 1 to 4
   items:
-    - image: "/images/portfolio/readapt/assemble.png"
+    - image: "/images/portfolio/readapt/assemble-small.jpg"
 
 
 # project description
@@ -134,7 +134,7 @@ gallery8:
 # project description
 content9:
   enable: true
-  video: "<iframe src='/video/readapt.mp4' width='1280' height='800' allowfullscreen='allowfullscreen'></iframe>"
+  video: "<iframe src='https://youtube.com/embed/SwLmUQSM60w' width='1280' height='800' allowfullscreen='allowfullscreen'></iframe>"
 
 # project description
 content_end:

@@ -4,7 +4,7 @@ title: BUTTON GAME
 date: 2023-08-03T20:18:01+03:00
 category: Product, Interaction
 category_slug: product, interaction
-image: images/portfolio/button/heroshot.png
+image: images/portfolio/button/heroshot-small.jpg
 columns: 1 # If you want a media box to be 1, 2 or 3 columns wide
 
 # excerpt for alternative portfolio style

@@ -4,7 +4,7 @@ title: SWIMMING OCTOPUS
 date: 2017-10-03T20:18:01+03:00
 category: Product, Interaction, Technology
 category_slug: product, interaction, tech
-image: images/portfolio/octopus/heroshot.png
+image: images/portfolio/octopus/heroshot-small.jpg
 columns: 1 # If you want a media box to be 1, 2 or 3 columns wide
 
 # excerpt for alternative portfolio style
@@ -28,18 +28,18 @@ style: 1 # 1 to 7
 content1:
   enable: true
   text: "Swimming Octopus is an umbrella which mimic flexible motion of octopus leg."
-  video: "<iframe src='/video/octopus.mp4' width='1240' height='800' allowfullscreen='allowfullscreen'></iframe>"	
+  video: "<iframe src='https://www.youtube.com/embed/BuFXfnnolf4' width='1240' height='800' allowfullscreen='allowfullscreen'></iframe>"	
 
 # gallery project
 gallery1:
   enable: true
   columns: 2 # 1 to 4
   items:
-    - image: "/images/portfolio/octopus/detail1.png"
+    - image: "/images/portfolio/octopus/detail1-small.jpg"
     - image: "/images/portfolio/octopus/detail2.png"
     - image: "/images/portfolio/octopus/detail4.png"
-    - image: "/images/portfolio/octopus/detail3.png"
-    - image: "/images/portfolio/octopus/detail5.png"
+    - image: "/images/portfolio/octopus/detail3-small.jpg"
+    - image: "/images/portfolio/octopus/detail5-small.jpg"
 
 
 # project description
@@ -52,7 +52,7 @@ gallery2:
   enable: true
   columns: 1 # 1 to 4
   items:
-    - image: "/images/portfolio/octopus/heroshot2.png"
+    - image: "/images/portfolio/octopus/heroshot2-small.jpg"
   
 # project description
 content3:
@@ -64,7 +64,7 @@ gallery3:
   enable: true
   columns: 1 # 1 to 4
   items:
-    - image: "/images/portfolio/octopus/makingof1.png"
+    - image: "/images/portfolio/octopus/makingof1-small.jpg"
 
 # gallery proejct
 gallery4:

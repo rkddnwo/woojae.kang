@@ -4,7 +4,7 @@ title: AQUANTENNA
 date: 2024-06-03T20:18:01+03:00
 category: Product
 category_slug: product
-image: images/portfolio/aquantenna/heroshot.png
+image: images/portfolio/aquantenna/heroshot-small.jpg
 columns: 1 # If you want a media box to be 1, 2 or 3 columns wide
 
 # excerpt for alternative portfolio style
@@ -15,7 +15,7 @@ excerpt: "Created, likeness bring which in stars herb a is give you’ll it life
 # parallax
 parallax:
   enable: true
-  image: "/images/portfolio/aquantenna/heroshot.png"
+  image: "/images/portfolio/aquantenna/heroshot-small.jpg"
   title: ""
   effectTitle: "none" # Full list effects you can find in documentation theme
   parallaxVideo: "hide" # If "parallaxVideo" is "show"
@@ -78,7 +78,7 @@ gallery4:
   enable: true
   columns: 1 # 1 to 4
   items:
-  - image: "/images/portfolio/aquantenna/bluetooth.png"
+  - image: "/images/portfolio/aquantenna/bluetooth-small.jpg"
 
 
 # project description

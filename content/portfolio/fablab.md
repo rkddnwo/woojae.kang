@@ -4,7 +4,7 @@ title: POPUPLAB
 date: 2018-10-03T20:18:01+03:00
 category: Product
 category_slug: product
-image: images/portfolio/fablab/heroshot.png
+image: images/portfolio/fablab/heroshot-small.jpg
 columns: 1 # If you want a media box to be 1, 2 or 3 columns wide
 
 # excerpt for alternative portfolio style
@@ -52,7 +52,7 @@ gallery2:
   enable: true
   columns: 1 # 1 to 4
   items:
-    - image: "/images/portfolio/fablab/drawer.png"
+    - image: "/images/portfolio/fablab/drawer-small.jpg"
   
 # project description
 content3:
@@ -66,7 +66,7 @@ gallery3:
   enable: true
   columns: 1 # 1 to 4
   items:
-    - image: "/images/portfolio/fablab/explodedview.png"
+    - image: "/images/portfolio/fablab/explodedview-small.jpg"
 
 
 # project description
