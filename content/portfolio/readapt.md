@@ -131,10 +131,7 @@ gallery8:
   items:
   - image: "/images/portfolio/readapt/makingof2.png"
 
-# project description
-content9:
-  enable: true
-  video: "<iframe src='https://youtube.com/embed/SwLmUQSM60w' width='1280' height='800' allowfullscreen='allowfullscreen'></iframe>"
+
 
 # project description
 content_end:

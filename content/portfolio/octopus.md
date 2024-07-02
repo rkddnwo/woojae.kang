@@ -99,10 +99,10 @@ gallery6:
   enable: true
   columns: 4
   items:
-  - image: "images/portfolio/octopus/picture3.jpg"
-  - image: "images/portfolio/octopus/picture4.jpg"
-  - image: "images/portfolio/octopus/picture5.jpg"
-  - image: "images/portfolio/octopus/picture6.jpg"
+  - image: "images/portfolio/octopus/Picture3.jpg"
+  - image: "images/portfolio/octopus/Picture4.jpg"
+  - image: "images/portfolio/octopus/Picture5.jpg"
+  - image: "images/portfolio/octopus/Picture6.jpg"
 
 
 # gallery project
@@ -110,8 +110,8 @@ gallery7:
   enable: true
   columns: 2
   items:
-  - image: "images/portfolio/octopus/picture2.png"
-  - image: "images/portfolio/octopus/picture1.jpg"
+  - image: "images/portfolio/octopus/Picture2.png"
+  - image: "images/portfolio/octopus/Picture1.jpg"
 
 
 
