@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Woojae Kang portfolio</title>
+    <link>https://woojae-kang.pages.dev/</link>
+    <description>Recent content on Woojae Kang portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jun 2024 20:18:01 +0300</lastBuildDate>
+    <atom:link href="https://woojae-kang.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AQUANTENNA</title>
+      <link>https://woojae-kang.pages.dev/portfolio/aquantenna/</link>
+      <pubDate>Mon, 03 Jun 2024 20:18:01 +0300</pubDate>
+      <guid>https://woojae-kang.pages.dev/portfolio/aquantenna/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SINGLE PATH 3D PRINT</title>
+      <link>https://woojae-kang.pages.dev/portfolio/3dprint/</link>
+      <pubDate>Wed, 03 Apr 2024 20:18:01 +0300</pubDate>
+      <guid>https://woojae-kang.pages.dev/portfolio/3dprint/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BUTTON GAME</title>
+      <link>https://woojae-kang.pages.dev/portfolio/button/</link>
+      <pubDate>Thu, 03 Aug 2023 20:18:01 +0300</pubDate>
+      <guid>https://woojae-kang.pages.dev/portfolio/button/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RE-ADAPT</title>
+      <link>https://woojae-kang.pages.dev/portfolio/readapt/</link>
+      <pubDate>Mon, 03 Jan 2022 20:18:01 +0300</pubDate>
+      <guid>https://woojae-kang.pages.dev/portfolio/readapt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ROLLE</title>
+      <link>https://woojae-kang.pages.dev/portfolio/rolle/</link>
+      <pubDate>Fri, 03 May 2019 20:18:01 +0300</pubDate>
+      <guid>https://woojae-kang.pages.dev/portfolio/rolle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>POPUPLAB</title>
+      <link>https://woojae-kang.pages.dev/portfolio/fablab/</link>
+      <pubDate>Wed, 03 Oct 2018 20:18:01 +0300</pubDate>
+      <guid>https://woojae-kang.pages.dev/portfolio/fablab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>S-DUMBBELL</title>
+      <link>https://woojae-kang.pages.dev/portfolio/dumbbell/</link>
+      <pubDate>Sat, 03 Mar 2018 20:18:01 +0300</pubDate>
+      <guid>https://woojae-kang.pages.dev/portfolio/dumbbell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SWIMMING OCTOPUS</title>
+      <link>https://woojae-kang.pages.dev/portfolio/octopus/</link>
+      <pubDate>Tue, 03 Oct 2017 20:18:01 +0300</pubDate>
+      <guid>https://woojae-kang.pages.dev/portfolio/octopus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://woojae-kang.pages.dev/parallax-home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://woojae-kang.pages.dev/parallax-home/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://woojae-kang.pages.dev/slider-home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://woojae-kang.pages.dev/slider-home/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bernd - Home - About</title>
+      <link>https://woojae-kang.pages.dev/_about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://woojae-kang.pages.dev/_about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bernd - Home - Contact</title>
+      <link>https://woojae-kang.pages.dev/_contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://woojae-kang.pages.dev/_contact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bernd - Portfolio</title>
+      <link>https://woojae-kang.pages.dev/_portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://woojae-kang.pages.dev/_portfolio/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
