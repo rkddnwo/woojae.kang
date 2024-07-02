@@ -1,5 +1,5 @@
 ---
-title: Bernd - Portfolio
+title: Woojae Kang - Projects
 builder: true
 
 # Content section

@@ -1,5 +1,5 @@
 ---
-title: Bernd - Home - About
+title: Woojae Kang - About
 builder: true
 
 # Content section
