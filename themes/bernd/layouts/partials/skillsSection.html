@@ -1,0 +1,28 @@
+{{ with .Site.Data.about.skillbar }}
+{{ if .enable }}
+
+{{ "<!-- Skillbar Section -->" | safeHTML }}
+<section class="language-section">
+
+    <div class="container">
+        <div class="row">
+			<div class="col-md-2">
+			</div>
+            <div class="col-md-8">
+                <h2>{{ .title | safeHTML }}</h2>
+            
+                {{ range .items }}
+                   
+                        <div class="skillbar-title">
+                            <h4>{{ .title }}</h4>
+                        </div>
+                       
+                   
+               {{ end }}
+          </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
+{{ end }}

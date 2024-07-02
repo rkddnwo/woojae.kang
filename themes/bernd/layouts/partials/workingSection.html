@@ -1,0 +1,23 @@
+{{ with .Site.Data.about.working }}
+{{ if .enable }}
+
+{{ "<!-- Skillbar Section -->" | safeHTML }}
+<section class="skillbar-section">
+
+    <div class="container">
+        <div class="row">
+			<div class="col-md-2">
+			</div>
+            <div class="col-md-8">
+                <h2>{{ .title | safeHTML }}</h2>
+                {{ range .items }}
+                            <h3>{{ .title | safeHTML }}</h3><p>{{ .date | safeHTML }}<br>{{ .des | safeHTML }}</p><h3></h3>
+             
+               {{ end }}
+          </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
+{{ end }}

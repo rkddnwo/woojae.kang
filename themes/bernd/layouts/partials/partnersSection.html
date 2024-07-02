@@ -1,0 +1,23 @@
+{{ with .Site.Data.about.partners }}
+{{ if .enable }}
+
+{{ "<!-- Partners Section -->" | safeHTML }}
+<section class="partners-section">
+
+    <div class="container">
+        <div class="row">
+
+                <h2>{{ .title | safeHTML }}</h2>
+                <h3>{{ .description | safeHTML }}</h3>
+
+                {{ range .items }}
+                <div class="col-md-4">
+                <div class="partners-box">
+                    <a href="{{ .url }}" target="_blank"><img src="{{ .image | absURL }}"></a>
+                </div>
+                </div>
+                {{ end }}
+
+</section>
+{{ end }}
+{{ end }}

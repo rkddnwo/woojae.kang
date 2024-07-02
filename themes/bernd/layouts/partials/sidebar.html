@@ -1,0 +1,75 @@
+{{ $sidebar := .Site.Params.sidebar }}
+{{ $about := .Site.Params.about }}
+{{ $subscribe := .Site.Params.subscribe }}
+
+  <aside class="widget-area">
+
+      {{ if $sidebar.search }}
+      <section class="widget widget-search">
+        <span id="search">
+          <input type="search" id="searchInput" placeholder="{{i18n "search"}}">
+          <div id="searchResults"></div>
+        </span>
+      </section>
+      {{ end }}
+
+      {{ if $about.about }}
+      <section class="widget widget-about">
+        <h5 class="widget-title">{{ i18n "aboutAuthor" }}</h5>
+        <img src="{{ $about.image | absURL }}" alt="author">
+        {{ $about.text | safeHTML }}
+        <div class="social-icons">
+          <ul>
+            {{ range $about.social }}
+             <li><a href="{{ .url }}" target="_blank"><i aria-hidden="true" class="{{ .icon }}"></i></a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </section>
+      {{ end }}
+
+      {{ if $sidebar.categories }}
+      <section class="widget widget-categories">
+        <h5 class="widget-title">{{ i18n "categories" }}</h5>
+        <ul>
+          {{ range .Site.Taxonomies.categories }}
+          <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
+          {{ end }}
+        </ul>
+      </section>
+      {{ end }}
+
+      {{ if $sidebar.latestPosts }}
+      <section class="widget widget-recent-entries">
+        <h5 class="widget-title">{{ i18n "latestPosts" }}</h5>
+        <ul>
+          {{ range first 4 (where .Site.RegularPages "Section" "blog") }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </section>
+      {{ end }}
+
+      {{ if $subscribe.subscribe }}
+      <section class="widget widget-subscribe">
+        <h5 class="widget-title">{{ i18n "subscribeWidget" }}</h5>
+        <form id="ajaxChimp" data-url="{{  $subscribe.mailChimpURL }}">
+          <input id="mc-email" type="text" placeholder="{{ i18n "subscribe" }}">
+          <button type="submit">{{ i18n "subscribeButton" }}</button>
+          <label for="mc-email"></label>
+      </form>
+      </section>
+      {{ end }}
+
+      {{ if $sidebar.tags }}
+      <section class="widget widget-tagcloud">
+        <h5 class="widget-title">{{ i18n "tags" }}</h5>
+        <div class="tagcloud">
+          {{ range .Site.Taxonomies.tags }}
+          <a href="{{ .Page.Permalink }}" class="tagcloud-link">{{ .Page.Title }}</a>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+    </aside>

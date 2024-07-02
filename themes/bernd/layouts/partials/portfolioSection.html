@@ -1,0 +1,100 @@
+{{ $stretch := .Params.stretch }}
+{{ $filter := .Params.filter }}
+{{ $columns := .Params.columns }}
+{{ $columnItem := .Params.columnItem }}
+{{ $portfolio := .Site.Params.portfolio }}
+{{ $portfolioType := .Params.portfolioType }}
+{{ $portfolioStyle := .Params.portfolioStyle }}
+{{ $gapHorizontal := .Params.gapHorizontal }}
+{{ $gapVertical := .Params.gapVertical }}
+{{ $boxesToLoadStart := .Params.boxesToLoadStart }}
+{{ $boxesToLoad := .Params.boxesToLoad }}
+{{ $loadMoreButton := .Params.loadMoreButton }}
+{{ $titleSectionPortfolio := .Params.titleSectionPortfolio }}
+{{ $descriptionSectionPortfolio := .Params.descriptionSectionPortfolio }}
+
+{{ "<!-- Portfolio Section -->" | safeHTML }}
+<section class="portfolio-section">
+    {{ if eq $stretch "show" }}
+    <div class="container-fluid p-0">
+    {{ else }} 
+    <div class="container">
+    
+            {{ if or ( $titleSectionPortfolio ) ( $descriptionSectionPortfolio ) }}
+            <div class="title-box-section">
+                {{ if $titleSectionPortfolio }}
+                    <h2>{{ $titleSectionPortfolio }}</h2>
+                {{ end }}
+                {{ if $descriptionSectionPortfolio }}
+                    <h3>{{ $descriptionSectionPortfolio }}</h3>
+                {{ end }}
+            </div>
+            {{ end }}
+    {{ end }}
+
+        <!-- Portfolio Filter -->
+        <div class="portfolioFilter {{ $filter }}">
+            <div data-filter="*" class="selected filter-item">{{ i18n "all" }}</div>
+        {{ range $portfolio.filters }}
+        <div data-filter=".{{ .slug }}" class="filter-item">{{ .name }}</div>
+        {{ end }}
+
+        </div>
+
+    <!-- Works Items -->
+    <div id="portfolio" data-portfolio-style="{{$portfolioStyle}}"  data-columns="{{$columns}}" data-boxes-start="{{$boxesToLoadStart}}" data-boxes-load="{{$boxesToLoad}}" data-gap-horizontal="{{$gapHorizontal}}" data-gap-vertical="{{$gapVertical}}" data-load-more-word="{{ i18n "loadMoreWord" }}" data-loading-word="{{ i18n "LoadingWord" }}" data-no-more="{{ i18n "noMoreEntriesWordPortfolio" }}">
+        
+        <div class="media-boxes-grid-sizer"></div>
+
+        {{ range where $.Site.RegularPages "Section" "portfolio" }}
+
+            <div class="media-box {{ .Params.category_slug }}" {{ if eq $columnItem "show" }} data-columns="{{ .Params.columns }}"  {{ end }}>
+                {{ if eq $portfolioType "project" }}
+                    <a href="{{ .Permalink }}" class="link-project">
+                {{ end }}
+                {{ if eq $portfolioType "gallery" }}
+                <div class="mb-open-popup" data-src="{{ .Params.image | absURL }}">
+                {{ end }}
+                <div class="media-box-image">
+                    <div data-alt="{{ .Title }}" data-thumbnail="{{ .Params.image | absURL }}"></div>
+                    
+                    {{ if eq $portfolioStyle "classic" }}
+                    <div class="thumbnail-overlay">
+                        <h2 class="media-box-title">{{ .Title }}</h2>
+                    </div>
+                    {{ end }}
+
+                </div>
+                {{ if eq $portfolioType "project" }}
+                </a>
+                {{ end }}
+                {{ if eq $portfolioStyle "minimal" }}
+                <div class="media-box-title">
+                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                </div>
+                {{ end }}
+                {{ if eq $portfolioType "gallery" }}
+                </div>
+                {{ end }}
+
+            </div>
+
+        {{ end }}
+
+    </div>
+
+
+        {{ if eq $loadMoreButton "show" }}
+        <div class="ajax-load-box text-center">
+            <div class="media-boxes-load-more media-boxes-load-more-button"></div>
+        </div>
+        {{ end }}
+
+     {{ if eq $stretch "show" }}    
+     </div>
+     {{ else }}
+  
+  {{ end }}
+</section>
+
+
