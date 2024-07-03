@@ -157,7 +157,7 @@ MATERIAL<br>
 PLASTIC, TPU, CHEMICAL FABRIC<br><br>
 ROLE<br>
 DESIGNER, ENGINEER<br><br>
-<i class="fa-solid fa-award"></i>AWARD<br>
+<i class='fa-solid fa-award'></i> AWARD<br>
 BPXRCA SPARKLING CHALLENGE 2ND PLACE<br><br>**Hoehn, Rebecca M. and Jahl, Lydia G. and Herkert, Nicholas J. and Hoffman, Kate and 
 Soehl, Anna and Diamond, Miriam L. and Blum, Arlene and Stapleton, Heather M.(2024). 
 Flame Retardant Exposure in Vehicles Is Influenced by Use in Seat Foam and Temperature, Environmental Science & Technology 58, 8825-8834, 202"
