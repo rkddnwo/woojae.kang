@@ -93,10 +93,7 @@ gallery4:
 # project description
 content5:
   enable: true
-  text: "To understand the kind of feedback needed, I brought mock-ups to the climbing gym and conducted various tests with climbers. Initially, we focused on 
-how the large button’s shape could be utilized in climbing, concentrating on the tactile sensation of pressing the button. Later, our focus shifted to the 
-responsiveness when gripping, the mechanism for measuring force, and how to show feedback. To achieve this, I focused on minimizing data noise and 
-determining the optimal placement of LEDs so they wouldn’t obstruct the climber’s view while holding the grip."
+  text: "To understand the kind of feedback needed, I brought mock-ups to the climbing gym and conducted various tests with climbers. "
 
 # gallery project
 gallery5:
@@ -128,7 +125,11 @@ the direction and amount of force to apply on key holds of a course. BUTTON GAME
 can provide this information which would help in formulating more structured strategies 
 on different courses. Additionally, based on their body type and climbing style, climbers 
 could get recommendations on better holds and optimal directions of force by BUTTON 
-GAME likw data analysis asistane
+GAME likw data analysis asistane.<br><br>
+
+I focused on feedback from climbers. Initially, I focused on how the large button’s shape could be utilized in climbing, concentrating on the tactile sensation of pressing the button. Later, our focus shifted to the 
+responsiveness when gripping, the mechanism for measuring force, and how to show feedback. To achieve this, I focused on minimizing data noise and 
+determining the optimal placement of LEDs so they wouldn’t obstruct the climber’s view while holding the grip.
 <br><br><br>YEAR<br>
 2022 JAN - JUN<br><br>
 SOLO PROJECT<br>
