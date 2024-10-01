@@ -99,7 +99,7 @@ gallery6:
 
 # project description
 content6:
-  enable: true
+  enable: false
   text: "To obtain accurate exercise tempo data, I collected and 
 analyzed the movement of professional sports trainers and 
 used the average to set the exercise tempo.<br><br>
