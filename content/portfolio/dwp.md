@@ -2,8 +2,8 @@
 # preview details
 title: DWP
 date: 2024-05-03T20:18:01+03:00
-category: Product, Technology
-category_slug: product, technology
+category: Product
+category_slug: product
 image: images/portfolio/dwp/heroshot_small.jpg
 columns: 1 # If you want a media box to be 1, 2 or 3 columns wide
 
