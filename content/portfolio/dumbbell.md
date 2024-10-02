@@ -4,7 +4,7 @@ title: S-DUMBBELL
 date: 2018-03-03T20:18:01+03:00
 category: Product, Interaction
 category_slug: product, interaction
-image: images/portfolio/dumbbell/heroshot-small.jpg
+image: images/portfolio/dumbbell/heroshot-small.png
 columns: 1 # If you want a media box to be 1, 2 or 3 columns wide
 
 # excerpt for alternative portfolio style
@@ -15,7 +15,7 @@ excerpt: "Created, likeness bring which in stars herb a is give you’ll it life
 # parallax
 parallax:
   enable: true
-  image: "/images/portfolio/dumbbell/heroshot-small.jpg"
+  image: "/images/portfolio/dumbbell/heroshot-small.png"
   title: "S-DUMBBELL"
   effectTitle: "none" # Full list effects you can find in documentation theme
   parallaxVideo: "hide" # If "parallaxVideo" is "show"

@@ -78,7 +78,7 @@ name = "Interaction"
 slug = "interaction"
 [[params.portfolio.filters]]
 name = "Technology"
-slug = "tech"
+slug = "technology"
 [[params.portfolio.filters]]
 name = "Product"
 slug = "product"
